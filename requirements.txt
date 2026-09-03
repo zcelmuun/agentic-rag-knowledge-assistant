@@ -3,3 +3,6 @@ python-dotenv
 qdrant-client
 pymupdf
 sentence-transformers
+langchain
+langgraph
+langchain-anthropic
