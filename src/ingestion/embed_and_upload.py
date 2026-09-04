@@ -1,7 +1,11 @@
 import json
+import os
+from dotenv import load_dotenv
 from qdrant_client import QdrantClient
 from qdrant_client.models import PointStruct
 from sentence_transformers import SentenceTransformer
+
+load_dotenv()
 
 with open("data/chunks.json", "r", encoding="utf-8") as f:
     chunks = json.load(f)
@@ -9,7 +13,10 @@ with open("data/chunks.json", "r", encoding="utf-8") as f:
 print(f"Loaded {len(chunks)} chunks.")
 
 model = SentenceTransformer("BAAI/bge-m3")
-client = QdrantClient(host="localhost", port=6333)
+client = QdrantClient(
+    url=os.environ.get("QDRANT_URL"),
+    api_key=os.environ.get("QDRANT_API_KEY")
+)
 
 points = []
 for i, chunk in enumerate(chunks):
