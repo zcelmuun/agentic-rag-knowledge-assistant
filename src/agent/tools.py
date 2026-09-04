@@ -28,3 +28,14 @@ def search_guidebook(query: str, top_k: int = 3) -> str:
         )
 
     return "\n\n---\n\n".join(formatted_results)
+
+
+from src.sql_store.queries import search_faq as _search_faq
+
+
+def search_faq_tool(query: str, language: str = "en") -> str:
+    """Search frequently asked questions about CBNU academic rules,
+    part-time work, leave of absence, and insurance. Use this for quick,
+    direct questions before doing a full guidebook search. Language must
+    be 'en', 'ko', or 'zh'."""
+    return _search_faq(query, language)

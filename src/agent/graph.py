@@ -1,9 +1,11 @@
 from langchain_core.tools import tool
 from langchain_anthropic import ChatAnthropic
+from langchain.agents import create_agent
 from dotenv import load_dotenv
 import os
 
 from src.agent.tools import search_guidebook as _search_guidebook
+from src.agent.tools import search_faq_tool as _search_faq_tool
 
 load_dotenv()
 
@@ -16,15 +18,21 @@ def search_guidebook(query: str) -> str:
     return _search_guidebook(query)
 
 
+@tool
+def search_faq(query: str, language: str = "en") -> str:
+    """Search frequently asked questions about CBNU academic rules,
+    part-time work, leave of absence, and insurance. Use this for quick,
+    direct questions before doing a full guidebook search. Language must
+    be 'en', 'ko', or 'zh'."""
+    return _search_faq_tool(query, language)
+
+
 model = ChatAnthropic(
     model="claude-sonnet-4-5",
     api_key=os.environ.get("ANTHROPIC_API_KEY")
 )
 
-
-from langchain.agents import create_agent
-
-agent = create_agent(model, tools=[search_guidebook])
+agent = create_agent(model, tools=[search_guidebook, search_faq])
 
 
 def ask(question: str) -> str:
@@ -37,6 +45,7 @@ if __name__ == "__main__":
         "What are the working hour limits for undergraduate part-time work?",
         "국제학생이 건강보험에 가입해야 하나요?",
         "外国人登录需要什么材料？",
+        "What GPA do I need from last semester to work part-time?",
     ]
 
     for question in test_questions:

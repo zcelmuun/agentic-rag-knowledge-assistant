@@ -1,0 +1,102 @@
+[
+  {
+    "qid": 34,
+    "question_en": "Which website should I use for course registration?",
+    "answer_en": "You should use the GaesinNuri system (https://eis.cbnu.ac.kr/cbnuLogin).",
+    "question_ko": "수강신청은 어느 사이트에서 하나요?",
+    "answer_ko": "개신누리 시스템(https://eis.cbnu.ac.kr/cbnuLogin)을 이용해야 합니다.",
+    "question_zh": "选课在哪个网站进行？",
+    "answer_zh": "需要使用 개신누리系统（https://eis.cbnu.ac.kr/cbnuLogin）。",
+    "source": "가이드라인"
+  },
+  {
+    "qid": 41,
+    "question_en": "What is the minimum grade required to earn credits in the undergraduate program?",
+    "answer_en": "You must achieve a grade of D0 or higher to earn credits.",
+    "question_ko": "학부 과정에서 학점을 인정받으려면 최소 몇 등급을 받아야 하나요?",
+    "answer_ko": "D0 등급 이상을 받아야 학점으로 인정됩니다.",
+    "question_zh": "本科课程要获得学分，最低需要多少等级？",
+    "answer_zh": "需要取得 D0 等级以上才会被承认学分。",
+    "source": "가이드라인"
+  },
+  {
+    "qid": 43,
+    "question_en": "How much attendance must a undergraduate student have to avoid receiving a F grade?",
+    "answer_en": "Students must attend at least three-quarters (3/4) of the total class hours.",
+    "question_ko": "학부생이 F를 받지 않으려면 출석을 얼마나 해야 하나요?",
+    "answer_ko": "총 수업시간의 4분의 3 이상 출석해야 합니다.",
+    "question_zh": "本科生要避免 F，出勤率需要达到多少？",
+    "answer_zh": "必须出勤总课时的 4 分之 3 以上。",
+    "source": "가이드라인"
+  },
+  {
+    "qid": 45,
+    "question_en": "What GPA threshold results in academic warning (academic probation) for undergraduate students?",
+    "answer_en": "If the semester GPA falls below 1.75, the student receives an academic warning.",
+    "question_ko": "학부생이 학사경고를 받는 평점 기준은 무엇인가요?",
+    "answer_ko": "매 학기 성적 평점평균이 1.75에 미달하면 학사경고를 받습니다.",
+    "question_zh": "本科生被学业警告的绩点标准是什么？",
+    "answer_zh": "如果每学期成绩平均绩点低于 1.75，就会受到学业警告。",
+    "source": "가이드라인"
+  },
+  {
+    "qid": 49,
+    "question_en": "What are the graduation language requirements for international undergraduate students?",
+    "answer_en": "Students must meet TOPIK Level 4 or higher (or one of the approved English score requirements).",
+    "question_ko": "외국인 학부생의 졸업 어학 요건은 무엇인가요?",
+    "answer_ko": "TOPIK 4급 이상(또는 영어 성적 요건 중 하나)을 충족해야 합니다.",
+    "question_zh": "外国人本科生的毕业语言要求是什么？",
+    "answer_zh": "需要达到 TOPIK 4 级以上（或符合其中一项英语成绩要求）。",
+    "source": "가이드라인"
+  },
+  {
+    "qid": 53,
+    "question_en": "Where should international students submit a leave of absence application?",
+    "answer_en": "After consulting with the International Office staff in charge of international students, the application must be submitted to the department office.",
+    "question_ko": "휴학 신청은 어디에 제출해야 하나요?",
+    "answer_ko": "국제교류본부 유학생 담당자와 상담 후 학과 사무실에 제출해야 합니다.",
+    "question_zh": "休学申请应提交到哪里？",
+    "answer_zh": "需要与国际交流本部负责人咨询后，向所属学科办公室提交。",
+    "source": "가이드라인"
+  },
+  {
+    "qid": 55,
+    "question_en": "What GPA is required from the previous semester to be eligible for part-time work?",
+    "answer_en": "As of the application date, the previous semester GPA must be at least 2.0 (grade C).",
+    "question_ko": "아르바이트(시간제 취업)를 하려면 직전 학기 성적이 얼마여야 하나요?",
+    "answer_ko": "신청일 기준 직전 학기 평균 성적이 2.0(C학점) 이상이어야 합니다.",
+    "question_zh": "打工（兼职）需要上学期成绩达到多少？",
+    "answer_zh": "以申请日为基准，前一学期平均成绩需要在 2.0（C 等级）以上。",
+    "source": "가이드라인"
+  },
+  {
+    "qid": 56,
+    "question_en": "How many hours can an undergraduate student (1st–2nd year) with TOPIK Level 3 work on weekdays?",
+    "answer_en": "Up to 30 hours per week on weekdays, and unlimited hours on weekends and during vacations.",
+    "question_ko": "TOPIK 3급인 학부생(1-2학년)은 주중에 몇 시간 일할 수 있나요?",
+    "answer_ko": "주중 30시간까지 가능하며, 주말과 방학은 무제한입니다.",
+    "question_zh": "TOPIK 3级的本科 1-2年级学生，平日最多可工作多少小时？",
+    "answer_zh": "工作日每周最多可以工作 30 小时，周末和假期则没有上限。",
+    "source": "가이드라인"
+  },
+  {
+    "qid": 59,
+    "question_en": "Within how many days must I report a change of university?",
+    "answer_en": "It must be reported within 15 days from the date the school was changed.\n\n",
+    "question_ko": "학교가 변경되었을 때 며칠 이내에 신고해야 하나요?",
+    "answer_ko": "학교 변경일로부터 15일 이내에 신고해야 합니다",
+    "question_zh": "更换学校后几天内必须申报？",
+    "answer_zh": "需要在学校变更之日起 15 日以内申报。",
+    "source": "가이드라인"
+  },
+  {
+    "qid": 66,
+    "question_en": "Is private medical insurance mandatory besides National Health Insurance?",
+    "answer_en": "It is strongly recommended to enroll in private insurance to prevent financial loss in case of a major accident.",
+    "question_ko": "국민건강보험 외에 민영보험도 꼭 가입해야 하나요?",
+    "answer_ko": "큰 사고 발생 시 경제적 손실을 방지하기 위해 가입을 강력히 권고합니다",
+    "question_zh": "除国民健康保险外，是否必须加入民间保险？",
+    "answer_zh": "为防止发生重大事故时的经济损失，强烈建议加入。",
+    "source": "가이드라인"
+  }
+]
