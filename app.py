@@ -3,7 +3,7 @@ from src.agent.graph import ask
 
 st.set_page_config(page_title="CBNU Student Assistant", page_icon="🎓")
 
-st.title("🎓 CBNU International Student Assistant")
+st.markdown("## 🎓 CBNU International Student Assistant")
 st.caption("Ask questions in English, Korean, or Chinese about academic rules, visas, part-time work, and more.")
 
 if "messages" not in st.session_state:
