@@ -49,7 +49,7 @@ The agent examines each query and autonomously selects the right tool(s) — oft
 ## Tools
 
 ### 1. Guidebook Search (Vector)
-Semantic search over guidebook content, embedded with `BAAI/bge-m3` (a multilingual embedding model) and stored in Qdrant. Chunking is section-based, preserving the document's original structure across all three languages.
+Semantic search over guidebook content, embedded with `multilingual-e5-small` (a multilingual embedding model) and stored in Qdrant. Chunking is section-based, preserving the document's original structure across all three languages.
 
 ### 2. FAQ Search (SQL)
 A small SQLite-backed table of frequently asked questions, used for fast, direct answers to common queries before falling back to a full document search.
@@ -72,7 +72,7 @@ The corpus used in this project is the official *2026 Guidebook for Internationa
 | LLM | Claude (Anthropic API) |
 | Agent orchestration | LangChain / LangGraph |
 | Vector database | Qdrant (Docker) |
-| Embedding model | BAAI/bge-m3 (local, multilingual) |
+| Embedding model | multilingual-e5-small (local, multilingual) |
 | Structured data | SQLite |
 | Web search | DuckDuckGo (`ddgs`) |
 | Frontend | Streamlit |
@@ -98,6 +98,8 @@ pip install -r requirements.txt
 Create a `.env` file in the project root:
 
 ANTHROPIC_API_KEY=your_key_here
+QDRANT_URL=your_qdrant_cloud_url
+QDRANT_API_KEY=your_qdrant_api_key
 
 
 ### 4. Start Qdrant (via Docker)
