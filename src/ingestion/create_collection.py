@@ -11,8 +11,8 @@ client = QdrantClient(
 )
 
 client.create_collection(
-    collection_name="cbnu_guidebook",
-    vectors_config=VectorParams(size=1024, distance=Distance.COSINE)
+    collection_name="cbnu_guidebook_v2",
+    vectors_config=VectorParams(size=384, distance=Distance.COSINE)
 )
 
-print("Collection 'cbnu_guidebook' created successfully.")
+print("Collection 'cbnu_guidebook_v2' created successfully.")

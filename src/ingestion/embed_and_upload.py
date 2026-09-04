@@ -12,7 +12,7 @@ with open("data/chunks.json", "r", encoding="utf-8") as f:
 
 print(f"Loaded {len(chunks)} chunks.")
 
-model = SentenceTransformer("BAAI/bge-m3")
+model = SentenceTransformer("intfloat/multilingual-e5-small")
 client = QdrantClient(
     url=os.environ.get("QDRANT_URL"),
     api_key=os.environ.get("QDRANT_API_KEY")
@@ -25,6 +25,6 @@ for i, chunk in enumerate(chunks):
     points.append(point)
     print(f"Embedded chunk {i + 1}/{len(chunks)}")
 
-client.upsert(collection_name="cbnu_guidebook", points=points)
+client.upsert(collection_name="cbnu_guidebook_v2", points=points)
 
-print(f"Uploaded {len(points)} points to Qdrant collection 'cbnu_guidebook'.")
+print(f"Uploaded {len(points)} points to Qdrant collection 'cbnu_guidebook_v2'.")
