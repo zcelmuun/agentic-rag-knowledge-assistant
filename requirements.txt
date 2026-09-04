@@ -6,3 +6,4 @@ sentence-transformers
 langchain
 langgraph
 langchain-anthropic
+ddgs

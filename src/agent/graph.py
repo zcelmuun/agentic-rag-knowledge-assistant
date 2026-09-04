@@ -6,6 +6,7 @@ import os
 
 from src.agent.tools import search_guidebook as _search_guidebook
 from src.agent.tools import search_faq_tool as _search_faq_tool
+from src.agent.web_search import search_web as _search_web
 
 load_dotenv()
 
@@ -27,12 +28,22 @@ def search_faq(query: str, language: str = "en") -> str:
     return _search_faq_tool(query, language)
 
 
+@tool
+def search_web(query: str) -> str:
+    """Search the web for current, real-time information relevant to
+    international students at CBNU (Chungbuk National University) that is
+    not available in the guidebook or FAQ — such as exchange rates, weather
+    in Cheongju, or visa/immigration policy updates. Do not use this for
+    general knowledge unrelated to studying in Korea."""
+    return _search_web(query)
+
+
 model = ChatAnthropic(
     model="claude-sonnet-4-5",
     api_key=os.environ.get("ANTHROPIC_API_KEY")
 )
 
-agent = create_agent(model, tools=[search_guidebook, search_faq])
+agent = create_agent(model, tools=[search_guidebook, search_faq, search_web])
 
 
 def ask(question: str) -> str:
@@ -46,6 +57,7 @@ if __name__ == "__main__":
         "국제학생이 건강보험에 가입해야 하나요?",
         "外国人登录需要什么材料？",
         "What GPA do I need from last semester to work part-time?",
+        "What is the current exchange rate from USD to KRW?",
     ]
 
     for question in test_questions:
