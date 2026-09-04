@@ -2,6 +2,9 @@
 
 Multilingual RAG + SQL + Web Search, orchestrated by a LangGraph agent
 
+
+**🔗 Live Demo:** [Try it here](https://agentic-rag-knowledge-assistant-6fvgeonvuq69sgdruxzaiv.streamlit.app/)
+
 ---
 
 ## Overview
